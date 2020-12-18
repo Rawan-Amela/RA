@@ -2,8 +2,8 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" type ="text/css" href="style.css"/>
-		<title>Accueil</title>
+		<link rel="stylesheet" type ="text/css" href="../style.css"/>
+		<title>Achat de ticket</title>
 	</head>
 	<body>
 		<header>
@@ -12,56 +12,58 @@
 		<div class="gauche">
 			<nav>
 				<ul>
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="Films/index.html"> Films </a></li>
-					<li><a href="Avis/index.html"> Avis</a></li>
-					<li><a href="Sources/index.html"> Sources </a></li>
+					<li><a href="../index.html">Accueil</a></li>
+					<li><a href="../Films/index.html"> Films </a></li>
+					<li><a href="../Avis/index.html"> Avis</a></li>
+					<li><a href="../Sources/index.html"> Sources </a></li>
 				</ul>
 			</nav>
 		</div>
 
-		<img src ="Images/sc1.jpg" alt="Santa Claus" class="img1">
-		<h1 class="titre1"> The Christmas Chronicles  </h1>
-		<p class="texte"> Désormais ado, et désapprouvant la nouvelle relation amoureuse <br>
-		de sa mère,Kate fugue et atterrit au pôle Nord,où un vilain <br>
-		elfe essaie d'annuler Noël...<br>25/12/2020 (1h30min)<br> </p>
+		<div class="achat">
+			<h3> ACHAT DE TICKETS </h3>
+		</div>
 		
-		<p class="acteurs"> Avec :Kurt Russell,Goldie Hawn,Darby Camp </p>
-
-		<img src="Images/noel.jpg" alt="Noel" class="photonoel">
-		<a href="https://www.youtube.com/watch?v=YaeDa_Uempk" target="_blank" class="bouton_trailer"> BANDE-ANNONCE </a>
-		<br>
-		<a href="Ticket/index.html"  class="bouton_ticket"> ACHETER UN TICKET </a>
-		
-		<table class="tableau">
-			<caption class="titre2"> Prochainement au cinéma </caption>
-			<tr>
-				<td>
-					<a href="https://www.youtube.com/watch?v=KxLb3aLb5j4">
-						<img src="Images/OIP.jpg" alt="OIP" class="films">
-					</a>
-				</td>
-				<td>
-					<a href="https://www.youtube.com/watch?v=XrjJbl7kRrI">
-						<img src="Images/pp.jpg" alt="pp" class="films">
-					</a>
-				</td>
-				<td>
-					<a href="https://www.youtube.com/watch?v=mdMtnvMJcDA">
-						<img src="Images/nn.jpg" alt="nn" class="films">
-					</a>
-				</td>
-				<td>
-					<a href="https://www.youtube.com/watch?v=UJzGE00wncU">
-						<img src="Images/ppp.jpg" alt="ppp" class="films" >
-					</a>
-				</td>
-				<td>
-					<a href="https://www.youtube.com/watch?v=EXeTwQWrcwY">
-						<img src="Images/dark.jpg" alt="dark" class="films">
-					</a>
-				</td>
-			</tr>
-		</table>	   
-	</body>
+		<div class="centre">
+			<form method="post" action="formulaire.php">
+				<div id="info_perso">
+					<label for="nom"> Nom:* </label>
+						<input type="text" id="nom" name="nom" maxlength="30" placeholder="Ex. Bellot" required autofocus>
+					<label for="prenom"> Prénom:* </label>
+						<input type="text" id="prenom" name="prenom" maxlength="30" placeholder="Ex. Nicolas" required>
+					<label for="email"> E-mail:* </label>
+						<input type="email" id="email" name="email" maxlength="30" placeholder="Ex.nicolas.bellot1@loria.fr" required>
+					<label for="phone"> Numéro de Telephone:* </label>
+						<input type="tel" id="phone" name="phone" maxlength="13" placeholder="Sans préfix pour FR" required>
+					<label> Cinéma:* </label>
+						<select name="cinema">
+							<option> - </option>
+							<option> RA NANCY </option>
+							<option> RA METZ </option>
+						</select><br>
+					<label> Heure:* </label>	
+						<select name="heure">
+							<option value="so"> - </option>
+							<option> 11h00 </option>
+							<option> 15h00 </option>
+							<option> 18h00 </option>
+							<option> 22h00 </option>
+						</select><br>
+					<label> Version:* </label>
+						<select name="Version">
+							<option> - </option>
+							<option> VERSION FRANCAIS </option>
+							<option> VERSION ANGLAIS </option>
+						</select>
+					<label> Nombre des Personnes:* </label>
+						<input type="number" name="nb_p" min="1" max="20" required>
+					<br><br>
+					<h6>*PAIMENT SUR PLACE </h6><br>
+					<h6>* Champs obligatoire</h6>
+					<button type="submit"> Validez </button>
+				</div>
+				<img src="../Images/ticket.jpg" alt="ticket" class="photo_ticket">
+			</form>
+		</div>
+	 </body>
 </html>
