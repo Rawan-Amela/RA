@@ -1,0 +1,474 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body  {
+	background-color: #FFFAFA;
+	
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background-color: maroon;
+	border: none;	
+}
+h1 {
+	position: absolute;
+	padding-left: 20px;
+	float: left;
+	margin-top: 10px;
+	font-family: 'Alfa Slab One', cursive;
+	color: black;
+}
+span {
+	font-size: 20px;
+}
+
+.gauche {
+	background-color: maroon;
+	border: none;
+	font-size: 35px;
+	text-align: center;
+	position: absolute;
+	z-index: 1;
+	width: 100px;
+	height: 106%;
+	padding-top: 5%;
+	margin: 0 -1%;
+}
+
+li {
+	display: inline-block;
+	padding: 15px 30px;
+}
+
+a {
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	font-family:'Open Sans', sans-serif;
+	font-size: 1.2vw;
+}
+
+a:hover {
+	color: black;
+	font-weight: bold;
+	transition: 200ms;
+}
+
+.img1 {
+	width: 100%;
+	position:absolute;
+	padding-top:-20%;
+	margin-bottom:20%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.titre1 {
+	color: red;
+	position: absolute;
+	top: 20%;
+	left: 13%;
+	font-family: 'Aclonica';
+	font-size: 32px;
+}
+
+.texte {
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 15%;
+	font-family: 'Serif';
+	font-size: 18px;
+}
+
+.acteurs {
+	color: #CD5C5C;
+	font-weight: bold;
+	position: absolute;
+	top: 45%;
+	left: 15%;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 18px;
+}
+
+.photonoel {
+	width: 350px;
+	height: 350px;
+	position: absolute;
+	top: 15%;
+	right: 8%;
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.bouton_trailer {
+	position: absolute;
+	top: 60%;
+	left: 15%;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 30px;
+	color: maroon;
+	background: lightyellow;
+	font-weight: bold;
+	border: solid;
+}
+
+.bouton_ticket {
+	position: absolute;
+	top: 60%;
+	left: 33%;
+    padding-right: 16px;
+	padding-left: 16px;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 30px;
+	color: maroon;
+	background: lightyellow;
+	font-weight: bold;
+	border: solid;
+}
+
+.titre2 {
+	color: red;
+	font-weight: bold;
+	position: absolute;
+	top: -28%;
+	font-family: 'Aclonica';
+	font-size: 28px;
+	text-align: center;
+}
+
+.tableau {
+	border: 1px;
+	position: absolute;
+	top: 90%;
+	left: 10%
+}
+
+.films {
+	width: 200px;
+	height: 200px;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.films:hover {
+	transform: translateY(-10px);
+}
+
+h2 {
+	padding-bottom: 20%;
+	position: relative;
+	left: 11%;
+	color: red;
+	margin-top: 10px;
+}
+
+.grudge {
+	border: solid;
+	position: absolute;
+	left: 11%;
+	top: 23.1%;
+	margin-left: 1%;
+	text-align: center;
+	border-width:2px;
+	border-color: maroon;
+	width: 250px;
+	height: 460px;
+	background-color:lightgrey;
+}
+
+.grudge img {
+	text-align: center;
+	margin-top: 10px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.grudge img:hover {
+	z-index: 1;
+	transform: scale(1.25);
+	box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+
+.grudge a {
+	position: relative;
+	bottom: -4px;
+}
+
+.bouton {
+	border: solid;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 30px;
+	color: maroon;
+	background: lightyellow;
+	font-weight: bold;
+}
+
+.acteurs1 {
+	font-weight: bold;
+}
+
+.badboys {
+	border: solid;
+	text-align: center;
+	position: absolute;
+	right: 46%;
+	top: 21%;
+	border-width: 2px;
+	border-color: maroon;
+	width: 250px;
+	height: 460px;
+	margin-top: 12px;
+	background-color: lightgrey;
+}
+
+.badboys a {
+	position: relative;
+	top: 42px;
+}
+
+.badboys img {
+	text-align: center;
+	margin-top: 10px;
+    overflow: hidden;
+	transition: 0.5s;
+}
+
+.badboys img:hover {
+	z-index: 1;
+	transform: scale(1.25);
+	box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+
+.turning {
+	border: solid;
+	text-align: center;
+	position: absolute;
+	right: 24%;
+	top: 21%;
+	border-width: 2px;
+	border-color: maroon;
+	width: 250px;
+	height: 460px;
+	margin-top: 12px;
+	background-color: lightgrey;
+}
+
+.turning img {
+	text-align: center;
+	margin-top: 10px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.turning img:hover {
+	z-index: 1;
+	transform: scale(1.25);
+	box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+
+.turning a {
+	position: relative;
+	top: 25px;
+}
+
+.tenet {
+	border: solid;
+	text-align: center;
+	position: absolute;
+	right: 2%;
+	top: 21%;
+	border-width: 2px;
+	border-color: maroon;
+	width: 250px;
+	height: 460px;
+	margin-top: 12px;
+	background-color: lightgrey;
+}
+
+.tenet img {
+	text-align: center;
+	margin-top: 10px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.tenet img:hover {
+	z-index: 1;
+	transform: scale(1.25);
+	box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+
+.tenet a {
+	position: relative;
+	top: 10px;
+}
+
+.achat {
+	width: 800px;
+	background-color: #FFFAFA;
+	border: solid;
+	margin: 10px auto 0px auto;
+	color: maroon;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.centre {
+	background-color: #BC8F8F;
+	width: 800px;
+	margin: auto;
+}
+
+form {
+	padding: 100px;
+	padding-top: 10%;
+}
+
+#info_perso {
+	width: 100%;
+	height: 60%;
+	margin-bottom: -1px;	
+}
+
+#info_perso button {
+	background-color: #3BAF9F;
+	display: block;
+	margin: 20px;
+	text-align: center;
+	border-radius: 12px;
+	border: 2px solid #366473;
+	padding: 14px 50px ;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+label {
+	width: 240px;
+	display: inline-block;
+}
+
+.photo_ticket {
+	position: absolute;
+	left: 63.5%;
+	top: 135px;
+	border: solid;
+	color: #DB7093;
+	height: 200px;
+	width: 200px;
+}
+
+.sources li {
+	position: absolute;
+	color: blue;
+	left: 8%;
+}
+
+.sources a {
+	color: blue;
+}
+
+.source1 {
+	top: 20%;
+}
+
+.source2 {
+	top: 28%;
+}
+
+.source3 {
+	top: 35%;
+}
+
+.source4 {
+	top: 40%;
+}
+
+.source5 {
+	top: 46%;
+}
+
+.source6 {
+	top: 53%;
+}
+
+.source7 {
+	top: 58%;
+}
+
+.source8 {
+	top: 62%;
+}
+
+.source9 {
+	top: 69%;
+}
+
+.source10 {
+	top: 74%;
+}
+
+.source11 {
+	top: 79%;
+}
+
+.source_texte {
+	color: blue;
+	position: absolute;
+	top: 93%;
+	left: 8%;
+}
+
+.source_texte a {
+	color: blue;
+}
+
+.titre_source {
+	position: absolute;
+	top: 90%;
+	right: 72%;
+	font-size: 24px;
+	color: red;
+	font-weight: bold;
+}
+
+.boutons {
+	background-color: #BC8F8F;
+	display: flex;
+	margin: 10px;
+	text-align: center;
+	border-radius: 12px;
+	border: none;
+	padding: 0px 50px ;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+button:hover {
+	font-weight: bold;
+}
+
+h6 {
+	font-weight: normal;
+	color: maroon;
+}
